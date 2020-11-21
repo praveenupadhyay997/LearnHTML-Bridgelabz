@@ -1,0 +1,103 @@
+h2 > span:hover:before 
+{
+    content: "\2605";
+    position: absolute;
+}
+h2 > span:hover:before,
+h2 > span:hover ~ span:before
+{
+    content: "\2605";
+    position: absolute;
+}
+html
+{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #aef0a1;
+    background-image: url(../assets/coolbg.png);
+}
+.headerContainer
+{
+    display: flex;
+    flex-flow: column wrap; 
+    align-content: center;
+    background-color: rgb(144, 220, 243);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    color: rgb(15, 14, 14);
+}
+.footerText
+{
+    display: flex;
+    flex-flow: column wrap; 
+    align-content: center;
+    background-color: rgb(144, 220, 243);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    color: rgb(15, 14, 14);
+}
+.mainContainer
+{
+    display: flex;
+    flex-flow: row wrap;
+    font-weight : bold;
+    text-align: center;
+}
+.maincontentItem
+{
+    text-align: left;
+}
+article
+{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    background: rgb(119, 245, 17);
+}
+.logo
+{
+    width: 5em;
+    height: 5em;
+    background: url('../assets/LogoRevoreviews.png');
+    background-size: cover;
+    background-position: center;
+    margin: -90px 0 0 -100px;
+    border: 2px solid black;
+    border-radius: 30px;
+    align-items: left;
+}
+.sideBarLeftItem
+{
+    background : rgb(245, 13, 187);
+    border-radius: 10px;
+    margin: 1;
+    text-align: left;
+    margin: 10px 10px;
+    padding: 10px;
+}
+.sideBarRightItem
+{
+    background : rgb(155, 44, 118);
+    border-radius: 10px;
+    text-align: left;
+    margin: 10px 10px;
+    padding: 10px;
+}
+.sideBarItem
+{
+    flex: 1 0 0;
+    border: 0px solid green;
+}
+.maincontentItem
+{
+    flex: 3 0px;
+}
+.sideBarLeftItem {order:1; }
+.maincontentItem
+{
+    flex: 3 0px;
+    order: 2;
+}
+.sideBarRightItem {order:3;}
